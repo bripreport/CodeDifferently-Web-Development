@@ -1,0 +1,87 @@
+/* applies to whole page */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.2px;
+}
+
+body{
+    background-color: #f3f3f3;
+    height: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(296deg, #15b2a3e6, #2c870480)fixed;
+}
+
+/* format and positioning of container and inside labels */
+.container{
+    background-color: #ffffff;
+    width: 450px;
+    padding: 50px 40px;
+    border-radius: 10px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 30px 50px rgba(0,0,0,0.1);
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+.lbl{
+    font-size: 16px;
+    color: #44475b;
+    font-weight: 400;
+}
+.val{
+    color: #44475b;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.input-box{
+    background-color: #cdf2cb;
+    color: #4c4af4;
+    padding: 5px;
+    border-radius: 5px;
+}
+/*  */
+#bill{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 100px;
+    text-align: right;
+    color: #4c4af4;
+}
+
+hr{
+    border: none;
+    border-bottom: 1px solid #cdccfd;
+}
+
+/* format for input container and calls a specific child element of a parent section */
+input[type="range"]{
+    width: 100%;
+    cursor: pointer;
+}
+input[type="range"]:not(:last-child){
+    margin-bottom: 5px;
+}
+section:not(:last-child){
+    margin-bottom: 40px;
+}
+section:not(:first-child){
+    margin-top: 40px;
+}
+section:last-child{
+    background-color: cdf2cb;
+    padding: 10px;
+    border-radius: 5px;
+}
+
